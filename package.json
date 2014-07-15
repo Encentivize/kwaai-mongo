@@ -12,14 +12,14 @@
     "url": "git://github.com/martinza78/kwaai-mongo"
   },
   "dependencies": {
-      "mongodb": "~1.4.4",
-      "mquery": "~0.8.0"
+      "mongodb": "~1.4.7",
+      "mquery": "~1.0.0"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "license": "MIT",
   "homepage": "https://github.com/martinza78/kwaai-mongo",
-  "_id": "kwaai-mongo@0.0.1",
+  "_id": "kwaai-mongo@0.0.2",
   "_from": "kwaai-mongo@"
 }
