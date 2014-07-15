@@ -1,6 +1,6 @@
 {
   "name": "kwaai-mongo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helpers for mongo",
   "main": "./index.js",
   "author": {
