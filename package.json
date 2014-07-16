@@ -1,6 +1,6 @@
 {
   "name": "kwaai-mongo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Helpers for mongo",
   "main": "./index.js",
   "author": {
@@ -20,6 +20,6 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/martinza78/kwaai-mongo",
-  "_id": "kwaai-mongo@0.0.3",
+  "_id": "kwaai-mongo@0.0.4",
   "_from": "kwaai-mongo@"
 }
