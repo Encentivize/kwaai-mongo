@@ -1,6 +1,6 @@
 {
   "name": "kwaai-mongo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Helpers for mongo",
   "main": "./index.js",
   "author": {
@@ -12,14 +12,15 @@
     "url": "git://github.com/martinza78/kwaai-mongo"
   },
   "dependencies": {
-      "mongodb": "~1.4.7",
-      "mquery": "~1.0.0"
+      "mongodb": "~1.4.8",
+      "mquery": "~1.0.0",
+      "async":"0.9.0"
   },
   "engines": {
     "node": ">= 0.10.0"
   },
   "license": "MIT",
   "homepage": "https://github.com/martinza78/kwaai-mongo",
-  "_id": "kwaai-mongo@0.0.4",
+  "_id": "kwaai-mongo@0.0.5",
   "_from": "kwaai-mongo@"
 }
