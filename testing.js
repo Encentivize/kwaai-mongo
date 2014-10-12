@@ -7,7 +7,8 @@ console.log(kwaaiMongo.utils.isValidId(null));
 console.log(kwaaiMongo.utils.isValidId("123456789012"));
 console.log(kwaaiMongo.utils.isValidId(new mongo.ObjectID()));
 console.log(kwaaiMongo.utils.isValidId("542daab9c4aa8ea8051018db"));
-
+console.log(kwaaiMongo.utils.parseId(new mongo.ObjectID()));
+return
 
 var connectionString="mongodb://127.0.0.1:27017/testdb";
 var kwaaiMongoConnection=kwaaiMongo.connectionManager(connectionString);
