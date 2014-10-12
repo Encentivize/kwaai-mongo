@@ -1,0 +1,25 @@
+{
+  "name": "kwaai-mongo",
+  "version": "0.1.0",
+  "description": "Helpers for mongo",
+  "main": "./index.js",
+  "author": {
+    "name": "Martin Naude",
+    "email": "martin@entelect.co.za"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martinza78/kwaai-mongo"
+  },
+  "dependencies": {
+    "async": "0.9.0",
+    "mongodb": "1.4.19"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/martinza78/kwaai-mongo",
+  "_id": "kwaai-mongo@0.1.0",
+  "_from": "kwaai-mongo@"
+}
