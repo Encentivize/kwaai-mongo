@@ -1,6 +1,5 @@
-var kwaaiMongo=require('./index.js');
-var mquery=require("mquery");
-var mongo=require("mongodb");
+var kwaaiMongo=require("./index.js");
+var mongo =require("mongodb");
 
 console.log("testing utils");
 console.log(kwaaiMongo.utils.generateId());
@@ -8,7 +7,6 @@ console.log(kwaaiMongo.utils.isValidId(null));
 console.log(kwaaiMongo.utils.isValidId("123456789012"));
 console.log(kwaaiMongo.utils.isValidId(new mongo.ObjectID()));
 console.log(kwaaiMongo.utils.isValidId("542daab9c4aa8ea8051018db"));
-
 
 
 var connectionString="mongodb://127.0.0.1:27017/testdb";
@@ -48,10 +46,10 @@ kwaaiMongoConnection.connectToCollections(["testcol1","testcol2","testcol4","tes
 
 
 /*
-var t = new mongo.ObjectID();
-var isvalid=mongo.ObjectID.isValid(t);
 
-
+var kwaaiMongo=require('./lib/mongo.js');
+var mquery=require("mquery");
+var mongo=require("mongodb");
 
 
 function collectionConnected(err,collection){
@@ -68,7 +66,9 @@ function collectionConnected(err,collection){
 
 }
 kwaaiMongo.connectToCollection("testcol1",connectionString,collectionConnected)
+
 */
+
 
 /*
 function collectionConnected(err,collection){
