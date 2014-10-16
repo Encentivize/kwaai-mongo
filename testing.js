@@ -8,10 +8,13 @@ console.log(kwaaiMongo.utils.isValidId("123456789012"));
 console.log(kwaaiMongo.utils.isValidId(new mongo.ObjectID()));
 console.log(kwaaiMongo.utils.isValidId("542daab9c4aa8ea8051018db"));
 console.log(kwaaiMongo.utils.parseId(new mongo.ObjectID()));
-return
 
-var connectionString="mongodb://127.0.0.1:27017/testdb";
-var kwaaiMongoConnection=kwaaiMongo.connectionManager(connectionString);
+var connectionString="mongodb://127.0.0.1:27017/testdb?connectTimeoutMS=60000&keepAlive=60000&socketTimeoutMS=0";
+var connectionOptions={
+    server: {auto_reconnect:true},
+    sourceTag:"test"
+}
+var kwaaiMongoConnection=kwaaiMongo.connectionManager(connectionString,connectionOptions);
 
 /*
 kwaaiMongoConnection.connectToDB(function(err){
@@ -21,8 +24,8 @@ kwaaiMongoConnection.connectToDB(function(err){
 
 */
 
-for (var i=0;i<100;i++){
-    //setTimeout(testConnection,i*1000);
+for (var i=0;i<1000;i++){
+    setTimeout(testConnection,i*1000);
 }
 
 function testConnection()
@@ -31,11 +34,15 @@ function testConnection()
         if (err) {
             return console.log(err)
         }else{
-        console.log("success connecting to single collection");}
+        console.log("success connecting to single collection");
+        collection.find({name:"David"},function(){})}
+
     }
 
     kwaaiMongoConnection.connectToCollection("testcol1", collectionConnected)
 }
+
+return;
 
 function collectionsConnected(err, collections) {
     if (err) {
